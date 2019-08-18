@@ -201,7 +201,8 @@ add_action( 'widgets_init', 'independent_publisher_widgets_init' );
 function independent_publisher_scripts() {
 	global $post;
 
-	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons/genericons.css', array(), '3.1' );
+	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons/genericons.css', array(), '1' );
+    wp_enqueue_style( 'social-icons', get_template_directory_uri() . '/fonts/social-icons/social-logos.css', array(), '1' );
 
 	wp_enqueue_script( 'independent-publisher-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -337,7 +338,7 @@ if ( ! function_exists( 'independent_publisher_get_footer_credits' ) ) :
 	function independent_publisher_get_footer_credits() {
 		return sprintf(
 			'%1$s',
-			sprintf( __( '%1$s empowered by %2$s', 'independent-publisher' ), '<a href="' . esc_url( 'http://independentpublisher.me' ) . '" rel="designer" title="Independent Publisher: A beautiful reader-focused WordPress theme, for you.">Independent Publisher</a>', '<a href="http://wordpress.org/" rel="generator" title="WordPress: A free open-source publishing platform">WordPress</a>' )
+			sprintf( __( 'Customized %1$s theme empowered by %2$s', 'independent-publisher' ), '<a href="' . esc_url( 'http://independentpublisher.me' ) . '" rel="designer" title="Independent Publisher: A beautiful reader-focused WordPress theme, for you.">Independent Publisher</a>', '<a href="http://wordpress.org/" rel="generator" title="WordPress: A free open-source publishing platform">WordPress</a>' )
 		);
 	}
 endif;

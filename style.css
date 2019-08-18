@@ -2398,6 +2398,8 @@ table th {
 
 /**
  * Social menu styles; uses Genericons in font/genericons/
+ *
+ * SPK UPDATE: If any icon is not coming properly, refer the social-logos.css for correct content position and update here.
  */
 
 .screen-reader-text {
@@ -2420,7 +2422,7 @@ table th {
 	content: '\f408';
 	display: inline-block;
 	padding: 0 5px;
-	font-family: 'Genericons';
+	font-family: 'social-logos';
 	font-size: 26px;
 	vertical-align: top;
 	-webkit-font-smoothing: antialiased;
@@ -2428,7 +2430,7 @@ table th {
 
 #menu-social li a[href*="wordpress.org"]::before,
 #menu-social li a[href*="wordpress.com"]::before {
-	content: '\f205';
+	content:"\f205";
 	color: #BBC7D3;
 }
 
@@ -2559,8 +2561,18 @@ table th {
 }
 
 #menu-social li a[href*="linkedin.com"]::before {
-	content: '\f208';
+	content:"\f207";
 	color: #BBC7D3;
+}
+
+#menu-social li a[href*="telegram.me"]::before {
+	content:"\f606";
+	color: #BBC7D3;
+}
+
+#menu-social li a[href*="telegram.me"]:hover::before {
+	transition: color ease 0.3s;
+	color: #4A4A4E;
 }
 
 #menu-social li a[href*="linkedin.com"]:hover::before {
@@ -2569,7 +2581,7 @@ table th {
 }
 
 #menu-social li a[href*="mailto"]::before {
-	content: '\f410';
+	content: "\f410";
 	color: #BBC7D3;
 }
 
