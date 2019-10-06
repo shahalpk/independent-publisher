@@ -276,7 +276,7 @@ if ( ! function_exists( 'independent_publisher_stylesheet' ) ) :
 	 * Enqueue main stylesheet
 	 */
 	function independent_publisher_stylesheet() {
-		wp_enqueue_style( 'independent-publisher-style', get_stylesheet_uri(), [], '4.9.1' );
+		wp_enqueue_style( 'independent-publisher-style', get_stylesheet_uri(), [], '4.9.2' );
 	}
 endif;
 
